@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #98b5ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+  background-color: #344fa1;
+  color: whitesmoke;
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.todo-header {
+  border-radius: 1rem;
+  width: 80%;
+  padding: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.todo-header h1 {
+  font-size: 3.2rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.todo-header form {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.todo-header .form .submit-button {
+  color: whitesmoke;
+  background-color: transparent;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  padding: 1rem 2.5rem;
+  font-weight: bold;
+  border: 0.4rem solid #031956;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.todo-header .form .submit-button:hover {
+  background-color: #98b5ff;
+  color: white;
+}
+
+.todo-header .form .new-todo {
+  font-size: 2.4rem;
+  padding: 1rem;
+  color: white;
+  background-color: #031956;
+  border-radius: 1rem;
+}
+
+.todo-header input::placeholder {
+  color: white;
+  opacity: 50%;
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+.list h2 {
+  text-align: center;
+}
+
+main .list .todo-list .todo {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  color: white;
+}
+
+main .list .todo-list .todo input {
+  word-wrap: break-word;
+}
+
+.list .todo-list .text .todo {
+  font-size: 2rem;
+}
+
+.list .todo-list .todo .buttons .edit,
+.list .todo-list .todo .buttons .delete,
+.list .todo-list .todo .buttons .done {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  color: whitesmoke;
+  background-color: #98b5ff;
+  border: 0.3rem solid rgb(3, 25, 86);
+  border-radius: 1rem;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+.list .todo-list .todo .buttons .edit:hover,
+.list .todo-list .todo .buttons .delete:hover,
+.list .todo-list .todo .buttons .done:hover {
+  background-color: #98b5ff;
+  color: white;
+}
+
+.list .todo-list .todo .buttons .delete {
+  margin: 0 2rem;
+}
+
+.active {
+  border: 0.2rem solid #98b5ff;
+  border-radius: 0.5rem;
+}
+
+.finished {
+  color: red;
+  font-size: 2rem;
+  text-decoration: line-through 0.4rem;
+}
+
+@media screen and (max-width: 60rem) {
+  .list .todo-list .todo {
+    display: flex;
+    flex-direction: column;
+  }
+  .todo-header .form .new-todo {
+    font-size: 2.2rem;
+  }
+
+  .list .todo-list .text input.todo {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 1rem auto;
+  }
+  .list .todo-list .todo .buttons .edit,
+  .list .todo-list .todo .buttons .delete,
+  .list .todo-list .todo .buttons .done {
+    margin-top: 0.5rem;
+  }
+  .list .todo-list .todo .buttons .edit:hover,
+  .list .todo-list .todo .buttons .delete:hover,
+  .list .todo-list .todo .buttons .done:hover {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 38rem) {
+  .list .todo-list .text input.todo {
+    font-size: 1.8rem;
+  }
+  .todo-header .form .new-todo {
+    font-size: 1.6rem;
+  }
+  .todo-header .form .submit-button {
+    padding: 1rem 1.5rem;
+  }
+}

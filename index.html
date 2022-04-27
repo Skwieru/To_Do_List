@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="list">
+        <div class="todo-header">
+          <h1>To Do List</h1>
+          <form class="form">
+            <input
+              type="text"
+              class="new-todo"
+              placeholder="write your task"
+              maxlength="20"
+              minlength="3"
+            />
+            <button type="submit" class="submit-button">Add</button>
+          </form>
+        </div>
+        <h2>Todos:</h2>
+
+        <ul class="todo-list">
+          <!-- JS creating element here after form submit  -->
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
